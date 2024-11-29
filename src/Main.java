@@ -3,11 +3,13 @@ public class Main {
         System.out.println("Hello world!");
 
         System.out.println(" Задача 1");
-        int clientOS = 1;
+        int clientOS = 3;
         if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         } else if (clientOS == 0) {
             System.out.println("Установите версию приложения для IOS по ссылке");
+        } else {
+            System.out.println("Пора обновить телефон ");
         }
 
 
