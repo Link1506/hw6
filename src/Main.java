@@ -77,7 +77,7 @@ public class Main {
                 System.out.println("Осень");
                 break;
             default:
-                System.out.println("Месяц введен некоректно");
+                System.out.println("Месяц введен некоректно, введите другой месяц");
 
 
         }
