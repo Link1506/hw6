@@ -9,7 +9,7 @@ public class Main {
         } else if (clientOS == 0) {
             System.out.println("Установите версию приложения для IOS по ссылке");
         } else {
-            System.out.println("Пора обновить телефон ");
+            System.out.println("Пора обновить телефонн ");
         }
 
 
