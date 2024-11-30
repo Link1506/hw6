@@ -9,7 +9,7 @@ public class Main {
         } else if (clientOS == 0) {
             System.out.println("Установите версию приложения для IOS по ссылке");
         } else {
-            System.out.println("Пора обновить телефонн ");
+            System.out.println(" Ваша операционная система не поддерживается ");
         }
 
 
@@ -30,26 +30,32 @@ public class Main {
 
 
         System.out.println("Задача 3");
-        int year = 2021;
-        if (year % 400 == 0 && year > 1584) {
-            System.out.println(year + " год является високосным");
-        } else if (year % 100 == 0 && year > 1584) {
-            System.out.println(year + " год является високосным");
-        } else if (year % 4 == 0 && year > 1584) {
+        int year = 2024;
+        if (year > 1584 && ((year % 4 == 0 && year % 100 > 0) || year % 400 == 0)) {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным или ещё не введён");
+
         }
+
+//        } else if (year % 100 == 0 && year > 1584) {
+//            System.out.println(year + " год является високосным");
+//        } else if (year % 4 == 0 && year > 1584) {
+//            System.out.println(year + " год является високосным");
+//        } else {
+//            System.out.println(year + " год не является високосным или ещё не введён");
+//        }
 
         System.out.println("Задача 4");
 
-        int deliveryDistance = 85;
+        int deliveryDistance = 15;
+        int day = 1;
         if (deliveryDistance <= 20) {
-            System.out.println(" потребуется " + 1 + " день ");
+            System.out.println(" потребуется " + day + " день ");
         } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            System.out.println(" потребуется " + 2 + " дня ");
+            System.out.println(" потребуется " + day + 1 + " дня ");
         } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            System.out.println(" потребуется " + 3 + " дня ");
+            System.out.println(" потребуется " + day + 2 + " дня ");
         } else {
             System.out.println(" доставка не выполняется ");
         }
